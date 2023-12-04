@@ -18,8 +18,7 @@ body {
     height: min(70px);
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0,9);
-    background-color: #eee;
+    background-color: rgba(177, 177, 177, 0.2);
     padding: 20px;
 }
 
@@ -38,8 +37,13 @@ body {
     text-transform: capitalize;
 }
 
+.item__link:hover {
+    border-bottom: 1px solid black;
+}
+
 .item__link--black {
     color: black;
+    border-bottom: 1px solid black;
 }
 
 .header__button {
@@ -94,11 +98,91 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border-radius: 7px;
+    border-radius: 4px;
     font-size: 1.2rem;
 }
 
 .button__img {
     width: 30px;
     padding: 0px 10px 0px 0px;
+}
+
+.main__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__header-text {
+    font-size: 2.5rem;
+    padding: 60px;
+}
+
+.products__item {
+    display: grid;
+    min-width: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    padding: 5px;
+}
+
+.item__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+/* skapa en animation på hover item__cards. Så att bilden blir lite större */
+
+.cards__title {
+    padding: 100px 0 0 0;
+    font-size: 1.5rem;
+}
+
+.cards__price {
+    padding: 10px 0;
+}
+
+.item__collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #343332;
+}
+
+.item__collection--grid-position-first {
+    grid-column: 1 / 3;
+}
+
+.item__collection--grid-position-second {
+    grid-column: 3 / 5;
+}
+
+.collection__title{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.collection__summer-edition {
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.cards__button {
+    width: 130px;
+    height: 40px;
+    background-color: #343332;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin: 30px 0 0 0;
+    color: #999;
+    font-size: 0.6rem;
+    cursor: pointer;
 }
