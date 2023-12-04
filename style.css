@@ -4,3 +4,33 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: min(70px);
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0,9);
+    background-color: #eee;
+    padding: 20px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: min(375px);
+}
+
+.main__hero-content {
+    background-color: #eee;
+    height: 37vh;
+}
