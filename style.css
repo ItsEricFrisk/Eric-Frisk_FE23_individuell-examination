@@ -8,6 +8,7 @@ body {
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Inter', sans-serif;
     font-family: 'Oswald', sans-serif;
+    font-size: 10px;
 }
 
 .header {
@@ -27,7 +28,28 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    width: min(375px);
+    width: 555px;
+}
+
+.item__link {
+    text-decoration: none;
+    color: #999;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.item__link--black {
+    color: black;
+}
+
+.header__button {
+    width: 140px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 .main__hero-content {
