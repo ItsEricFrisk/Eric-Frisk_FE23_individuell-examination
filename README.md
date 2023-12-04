@@ -7,8 +7,11 @@ Individuell examinationsprojekt.
 **Godkänt**
 
 Att det ser ut enligt mockup. Viss variation i färger etc är okej.
+
 Att du använder dig av grid för layout i main, på resten av sidan ska ni använda er av flexbox
+
 Vettiga namn på era html attribut för att nå CSS etc på engelska.
+
 Att du använder dig av HTML Semantik
 
 ------------------------------------------------------------------------------------------------
