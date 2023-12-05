@@ -58,6 +58,10 @@ body {
     color: #fff;
 }
 
+.main {
+    min-width: 820px;
+}
+
 .main__hero-content {
     background-color: #eee;
     height: 65vh;
@@ -123,10 +127,9 @@ body {
 
 .products__item {
     display: grid;
-    min-width: 500px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
     padding: 5px;
 }
 
@@ -188,4 +191,13 @@ body {
     color: #999;
     font-size: 0.6rem;
     cursor: pointer;
+}
+
+.footer {
+    background-image: url(images/Footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    margin-top: 100px;
 }
