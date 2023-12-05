@@ -176,6 +176,9 @@ body {
 .collection__title{
     font-size: 2.5rem;
     color: white;
+    animation-name: colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .collection__summer-edition {
@@ -328,4 +331,13 @@ body {
         width: 350px;
         margin: 0;
     }
+}
+
+/* Animation that changes the text color */
+@keyframes colors {
+    0% {color: white;}
+    25% {color: lightyellow;}
+    50% {color: lightpink;}
+    75% {color: lightblue;}
+    100% {color: lightgreen;}
 }
