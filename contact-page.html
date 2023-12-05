@@ -27,7 +27,31 @@
     </header>
     <main class="main">
         <form class="main__form">
-            
+            <h1 class="form__title">Contact us</h1>
+            <p class="form__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perferendis facere, illum iure animi nulla optio.</p>
+            <section class="form__name">
+                <section class="name__first-name">
+                    <label for="fname">First name *</label>
+                    <input type="text" name="fname" id="name" placeholder="Enter your first name">
+                </section>
+                <section class="name__last-name">
+                    <label for="lname">Last name *</label>
+                    <input type="text" name="lname" id="name" placeholder="Enter your last name">
+                </section>
+            </section>
+            <br>
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="message">Message *</label>
+            <input type="text" name="message" id="message" placeholder="Your message here:">
+            <br>
+            <section class="form__checkbox">
+                <input type="checkbox" name="check" id="check">
+                <label for="check">I agree to the <a href="#" class="form__conditions">Terms and Conditions</a></label>
+            </section>
+            <br>
+            <input type="submit" name="submit" id="submit" value="Send">
         </form>
     </main>
     <footer class="footer">
