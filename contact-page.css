@@ -69,8 +69,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
+/* Form */
 .main__form {
     width: 600px;
     height: 650px;
@@ -200,4 +202,82 @@ body {
 
 .contact-info__img {
     padding: 0 10px 0 0;
+}
+
+/* For screens smaller than 850px */
+@media screen and (max-width: 850px) {
+    
+    /* Hiding the header button and navbar for smaller screens */
+     .header__nav, .header__button {
+        display: none;
+    }
+
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    /* Hamburger-menu  */
+    .header:before {
+        content: "\2630";
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+}
+
+/* For screens smaller than 639px */
+@media screen and (max-width: 630px) {
+    
+    .main__form {
+        width: 310px;
+        padding: 10px;
+    }
+
+    .form__title {
+        font-size: 2rem;
+    }
+
+    .form__description {
+        width: 295px;
+    }
+
+    .form__name {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    label {
+        width: 150px;
+    }
+
+    .name__first-name {
+        width: 150px;
+    }
+
+    .name__last-name {
+        width: 150px;
+    }
+
+    #name {
+        min-width: 150px;
+    }
+
+    #email {
+        min-width: 150px;
+    }
+
+    #message {
+        width: 280px;
+    }
+
+    /* Changing the position and size of contact content */ 
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__contact {
+        min-width: 300px;
+        margin: 10px;
+    }
 }
