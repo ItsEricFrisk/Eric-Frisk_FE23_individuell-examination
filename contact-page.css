@@ -59,3 +59,63 @@ body {
     background-color: #343332;
     color: #fff;
 }
+
+/* Main */
+
+.main {
+    width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    background-image: url(images/Footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    max-width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__contact {
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    margin-right: 100px;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact__title {
+    color: #464646;
+}
+
+.contact__title--big {
+    font-size: 2rem;
+}
+
+.contact__title--small {
+    font-size: 1rem;
+}
+
+.contact__description {
+    width: 250px;
+    padding: 5px 0;
+    color: #838383;
+}
+
+.information__contact-info {
+    display: flex;
+    padding: 10px 0 0 0;
+    cursor: pointer;
+}
+
+.contact-info__img {
+    padding: 0 10px 0 0;
+}
