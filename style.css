@@ -261,7 +261,8 @@ body {
     transition-duration: 1s;
 }
 
-/* Submit rotates while hovering over */
+/* Submit rotates while hovering over.
+**This is just to show that I can make animations in different ways** */
 #submit:hover {
     transform: rotate(360deg);
 }
@@ -332,7 +333,6 @@ body {
 
     .item__collection {
         grid-column: 1 / 3;
-        width: 320px;
     }
 
     /* Changing the position and size of contact content */ 
