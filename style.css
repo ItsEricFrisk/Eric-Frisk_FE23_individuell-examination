@@ -258,6 +258,12 @@ body {
     border-radius: 4px;
     color: white;
     font-size: 1rem;
+    transition-duration: 1s;
+}
+
+/* Submit rotates while hovering over */
+#submit:hover {
+    transform: rotate(360deg);
 }
 
 /* Changing the product size for devices smaller than 1100px */
