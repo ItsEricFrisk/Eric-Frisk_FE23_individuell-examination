@@ -21,7 +21,7 @@
                     <li class="list__item"><a href="#" class="item__link">Features</a></li>
                     <li class="list__item"><a href="#" class="item__link">Press</a></li>
                     <li class="list__item"><a href="#" class="item__link">Pricing</a></li>
-                    <li class="list__item"><a href="contact-page.html" class="item__link">Contact</a></li>
+                    <li class="list__item"><a href="#" class="item__link">Contact</a></li>
                 </ul>
             </nav>
             <button class="navigation__button">Get a quote</button>
@@ -79,21 +79,21 @@
         <section class="footer__contact">
             <h3 class="contact__title contact__title--big">Contact us</h3>
             <h4 class="contact__title contact__title--small">We'd love to hear from you</h4>
-            <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum esse.</p>
-            <section class="contact__information">
-                <section class="information__contact-info">
-                    <img class="contact-info__img" src="images/navigate-outline 1.svg" alt="Location icon">
-                    <p class="contact-info__location">Vallgatan 25, Göteborg</p>
-                </section>
-                <section class="information__contact-info">
-                    <img class="contact-info__img" src="images/call-outline 1.svg" alt="Phone Icon">
-                    <p class="contact-info__phone-number">031 123 456 7</p>
-                </section>
-                <section class="information__contact-info">
-                    <img class="contact-info__img" src="images/mail-outline 1.svg" alt="Mail Icon">
-                    <p class="contact-info__mail-address">info@zocom.se</p>
-                </section>
-            </section>
+            <form action="#" class="contact__form">
+                <label for="name" class="form__label">Enter your name:</label>
+                <input type="text" name="name" id="name" class="form__input" placeholder="Name:" required>
+                <br>
+                <label for="number" class="form__label">Enter your phone number:</label>
+                <input type="tel" name="number" id="number" class="form__input" placeholder="Number:" required>
+                <br>
+                <label for="email" class="form__label">Enter your email:</label>
+                <input type="email" name="email" id="email" class="form__input" placeholder="Email:" required>
+                <br>
+                <label for="message" class="form__label">Enter your message:</label>
+                <input type="text" name="message" id="message" class="form__input form__input--message" placeholder="Message:" required>
+                <br>
+                <input type="submit" name="submit" id="submit" value="Send">
+            </form>
         </section>
     </footer>
 </body>
