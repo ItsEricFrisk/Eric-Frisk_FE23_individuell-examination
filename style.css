@@ -166,6 +166,7 @@ body {
     grid-column: span 2;
 }
 
+/* Animation: Changing text color on the title */
 .collection__title{
     font-size: 2.5rem;
     color: white;
