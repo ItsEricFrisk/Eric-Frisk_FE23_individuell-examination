@@ -9,17 +9,11 @@ body {
 }
 
 /* Header */
-
-.header {
+.header__navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: min(70px);
-    position: sticky;
-    top: 0;
-    background-color: rgba(177, 177, 177, 0.2);
     padding: 20px;
+    background-color: #eee;
 }
 
 .nav__list {
@@ -46,7 +40,7 @@ body {
     border-bottom: 1px solid black;
 }
 
-.header__button {
+.navigation__button {
     width: 140px;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -55,14 +49,14 @@ body {
     border-radius: 4px;
 }
 
-.header__button:hover {
+.navigation__button:hover {
     background-color: #343332;
     color: #fff;
 }
 
 /* Hero content for downloading the app*/
 
-.main__hero-content {
+.header__hero-content {
     background-color: #eee;
     height: 65vh;
     min-width: 375px;
@@ -109,13 +103,14 @@ body {
     font-size: 1.2rem;
 }
 
-.button__img {
+.button__img-icon {
     width: 30px;
     padding: 0px 10px 0px 0px;
 }
 
-/* product cards */
+/* Main */
 
+/* product cards */
 .main__products {
     display: flex;
     flex-direction: column;
@@ -257,7 +252,7 @@ body {
         align-items: center;
     }
 
-    .main__hero-content {
+    .header__hero-content {
         width: 100%;
     }
 
@@ -271,16 +266,16 @@ body {
 @media screen and (max-width: 900px) {
 
     /* Hiding the header button and navbar for smaller screens */
-    .header__nav, .header__button {
+    .navigation__nav, .navigation__button {
         display: none;
     }
 
-    .header {
+    .header__navigation {
         flex-direction: row-reverse;
     }
 
     /* Hamburger-menu  */
-    .header:before {
+    .header__navigation:before {
         content: "\2630";
         cursor: pointer;
         font-size: 2rem;
@@ -299,7 +294,7 @@ body {
         width: 255px;
     }
 
-    .main__hero-content {
+    .header__hero-content {
         min-width: 320px;
     }
 
@@ -313,7 +308,7 @@ body {
         grid-template-columns: repeat(2, 160px);
         grid-template-rows: repeat(4, 1fr);
         gap: 10px;
-        min-width: 320px;
+        min-width: 300px;
     }
 
     .item__cards {
