@@ -338,20 +338,15 @@ body {
     }
 
     .products__item {
-        justify-content: center;
-        grid-template-columns: repeat(2, 160px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        gap: 10px;
-        min-width: 300px;
+        gap: 50px;
+        max-width: 100%;
     }
 
     .item__cards {
         grid-column: auto;
-        width: 160px;
-    }
-
-    .item__collection {
-        grid-column: 1 / 3;
+        width: 250px;
     }
 
     /* Changing the position and size of contact content */ 
@@ -380,6 +375,18 @@ body {
     .form__input--message {
         width: 150px;
         height: 50px;
+    }
+}
+
+/* Changing the product-size for screens smaller than 555px */
+@media screen and (max-width: 555px) {
+    
+    .products__item {
+        gap: 10px;
+    }
+
+    .item__cards {
+        max-width: 160px;
     }
 }
 
