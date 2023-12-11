@@ -161,10 +161,11 @@ body {
     grid-column: span 2;
 }
 
-/* Animation: Changing text color on the title */
+
 .collection__title{
     font-size: 2.5rem;
-    color: white;
+
+    /* Animation that changes the text color */
     animation-name: colors;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -185,6 +186,9 @@ body {
     color: #999;
     font-size: 0.6rem;
     cursor: pointer;
+
+    /* Animation that changes the border-shadow on buttons */
+    animation: button-glowing-colors 4s infinite;
 }
 
 /* Footer */
@@ -397,4 +401,13 @@ body {
     50% {color: lightpink;}
     75% {color: lightblue;}
     100% {color: lightgreen;}
+}
+
+/* Animation that changes the border-shadow on buttons */
+@keyframes button-glowing-colors {
+    0% {box-shadow: 0 0 5px white;}
+    25% {box-shadow: 0 0 5px lightyellow;}
+    50% {box-shadow: 0 0 5px lightpink;}
+    75% {box-shadow: 0 0 5px lightblue;}
+    100% {box-shadow: 0 0 5px lightgreen;}
 }
