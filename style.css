@@ -166,9 +166,7 @@ body {
     font-size: 2.5rem;
 
     /* Animation that changes the text color */
-    animation-name: colors;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    animation: colors 4s infinite alternate;
 }
 
 .collection__summer-edition {
@@ -188,7 +186,7 @@ body {
     cursor: pointer;
 
     /* Animation that changes the border-shadow on buttons */
-    animation: button-glowing-colors 4s infinite;
+    animation: button-glowing-colors 4s infinite alternate;
 }
 
 /* Footer */
