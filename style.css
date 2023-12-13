@@ -12,6 +12,7 @@ body {
 .header__navigation {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #eee;
 }
@@ -264,12 +265,6 @@ body {
     font-size: 1rem;
 }
 
-.form__input--message {
-    width: 280px;
-    height: 50px;
-    border-bottom: 1px solid black;
-}
-
 #submit {
     width: 150px;
     height: 30px;
@@ -385,7 +380,7 @@ body {
     
     .products__item {
         gap: 10px;
-    }
+    } 
 
     .item__cards {
         max-width: 160px;
@@ -401,7 +396,7 @@ body {
     100% {color: lightgreen;}
 }
 
-/* Animation that changes the border-shadow on buttons */
+/* Animation that changes the box-shadow on buttons */
 @keyframes button-glowing-colors {
     0% {box-shadow: 0 0 5px white;}
     25% {box-shadow: 0 0 5px lightyellow;}
