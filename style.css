@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    width: 555px;
+    width: 600px;
 }
 
 .item__link {
@@ -29,7 +29,7 @@ body {
     color: #999;
     font-size: 1.2rem;
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .item__link:hover {
@@ -43,16 +43,18 @@ body {
 
 .navigation__button {
     width: 140px;
-    font-size: 1.2rem;
-    text-transform: capitalize;
+    font-size: 1rem;
     padding: 10px;
     border: 1px solid black;
     border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .navigation__button:hover {
     background-color: #343332;
     color: #fff;
+    box-shadow: 2px 2px 5px #999;
 }
 
 /* Hero content for downloading the app*/
@@ -165,7 +167,7 @@ body {
 
 .collection__title{
     font-size: 2.5rem;
-
+    text-transform: uppercase;
     /* Animation that changes the text color */
     animation: colors 4s infinite alternate;
 }
@@ -213,7 +215,6 @@ body {
     margin-right: 100px;
     padding: 0 10px;
     border-radius: 4px;
-    display: flex;
 }
 
 .contact__information {
@@ -273,13 +274,12 @@ body {
     border-radius: 4px;
     color: white;
     font-size: 1rem;
-    transition-duration: 1s;
+    cursor: pointer;
 }
 
-/* Submit rotates while hovering over.
-**This is just to show that I can make animations in different ways** */
 #submit:hover {
-    transform: rotate(360deg);
+    background-color: #343332;
+    box-shadow: 2px 2px 5px #999;
 }
 
 /* Changing the product size for devices smaller than 1100px */
@@ -384,6 +384,26 @@ body {
 
     .item__cards {
         max-width: 160px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer__contact {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .contact__information {
+        height: 150px;
+    }
+
+    .contact__form {
+        border: none;
+        border-top: 1px solid black;
+        width: 100%;
     }
 }
 
